@@ -1,3 +1,4 @@
+[English](./README.md)|[简体中文](./README-zh_cn.md)
 # Nginx-Fancyindex-Theme-WhiteSmoke
 A theme is based on [Naereen's fancyindex theme(light)](https://GitHub.com/Naereen/Nginx-Fancyindex-Theme), equiped with [canvas-nest.js@1.0.1](https://github.com/hustcc/canvas-nest.js) developed by hustcc. 
 
@@ -5,8 +6,9 @@ A theme is based on [Naereen's fancyindex theme(light)](https://GitHub.com/Naere
 
 1. Edit ***styles.css*** if you want to change your site's style, like set background-image or change the color of the site.
 1. Edit Script tags in ***footer.html*** so you can choose which js file would be load when the site is opened or set its property. 
-   >    Delete tag Script appointed to ***loadmd.js*** if you needn't description on the header and footer of page.
-        Delete tag Script appointed to ***canvas-nest.js*** if you don't like this canvas; To change to another canvas, just put the new js file into the same directory and edit the Script tag in ***footer.html***.
+    > Delete tag Script appointed to ***loadmd.js*** if you needn't description on the header and footer of page.
+    
+    > Delete tag Script appointed to ***canvas-nest.js*** if you don't like this canvas; To change to another canvas, just put the new js file into the same directory and edit the Script tag in ***footer.html***.
 
 ## how to enable the theme in Nginx Directory.
 
@@ -38,6 +40,7 @@ It's very simple to enable this theme following the steps below.
     ```
     Replace autoindex with fancyindex and add ***hearder.html*** and ***footer.html*** like this.
     ```ini
+    # /etc/nginx/conf.d/files.conf new
     server{
         listen 8889;
         client_max_body_size 4G;
